@@ -1,0 +1,88 @@
+:root{
+  --bg: #F8F8F8;
+  --surface: #FFFFFF;
+  --text: #0E0E0E;
+  --muted: #8B8B8B;
+  --accent: #4C7DFE;
+  --radius: 14px;
+  --container: 1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Satoshi", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg),#FBFBFB);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+.container{max-width:var(--container);margin:0 auto;padding:32px}
+.site-header{background:transparent;padding:18px 0}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;color:var(--text);text-decoration:none}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:20px}
+.nav a{color:var(--muted);text-decoration:none;font-weight:500}
+.nav a:hover{color:var(--text)}
+
+.hero-grid{display:grid;grid-template-columns:1fr 480px;gap:36px;align-items:center}
+.eyebrow{color:var(--muted);font-size:0.95rem;margin:0}
+.hero-title{font-size:clamp(32px,6vw,56px);margin:8px 0;font-weight:800;letter-spacing:-0.02em}
+.tagline{color:var(--muted);margin:0 0 18px}
+.hero-ctas{display:flex;gap:12px;margin-top:18px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:10px 16px;font-weight:600;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:active{transform:translateY(1px)}
+.btn-ghost{border:1px solid rgba(14,14,14,0.06);background:transparent;color:var(--text)}
+
+.feature-illustration svg{width:100%;height:auto;border-radius:16px;box-shadow:0 6px 18px rgba(12,15,30,0.06)}
+
+.section-title{font-size:1.25rem;margin:0 0 8px}
+.section-lead{color:var(--muted);margin:0 0 20px}
+
+.grid{display:grid;gap:22px}
+.grid-work{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,15,30,0.04);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(12,15,30,0.08)}
+.card-link{color:inherit;text-decoration:none;display:block}
+.card-media{height:160px;background:#f2f4ff}
+.card-body{padding:16px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.one-liner{color:var(--muted);margin:0 0 10px;font-size:0.95rem}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{background:rgba(76,125,254,0.08);color:var(--accent);padding:6px 8px;border-radius:999px;font-size:0.82rem}
+
+.testimonial-strip{padding:20px;border-left:4px solid rgba(76,125,254,0.12);background:linear-gradient(90deg,transparent,rgba(76,125,254,0.01))}
+.testimonial-strip blockquote{margin:0;color:var(--text);font-weight:600}
+
+.site-footer{border-top:1px solid #EEE;padding:20px 0;margin-top:40px;background:transparent}
+.footer-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.footer-email{color:var(--text);text-decoration:none}
+.socials a{color:var(--muted);text-decoration:none;margin-left:12px}
+
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+/* Responsive */
+@media (max-width:1000px){.grid-work{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr} }
+@media (max-width:640px){.grid-work{grid-template-columns:1fr}.container{padding:20px}.hero-title{font-size:32px}}
+
+/* Work page specifics */
+.filters{display:flex;gap:8px;margin:14px 0 24px}
+.filter{background:transparent;border:1px solid rgba(14,14,14,0.06);padding:8px 12px;border-radius:10px;cursor:pointer}
+.filter.active{background:var(--accent);color:#fff;border-color:transparent}
+
+/* Case study */
+.case-header .meta{color:var(--muted);margin:6px 0}
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.media-grid figure{background:var(--surface);padding:12px;border-radius:12px}
+
+/* Contact & form */
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+.contact-form label{display:block;margin:12px 0 6px;font-weight:600}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #E8E8EE}
+.form-actions{margin-top:12px}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}

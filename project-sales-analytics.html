@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sales Analytics Dashboard — Case study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">Al houcine mazzine</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container case-study">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="work.html">Work</a> / Sales Analytics Dashboard</nav>
+
+    <header class="case-header">
+      <h1>Sales Analytics Dashboard</h1>
+      <p class="meta">Role: Full-stack dev & data analyst · 2025 · Tools: PostgreSQL, Airflow, Next.js, React, FastAPI</p>
+      <p class="lede">End-to-end data pipeline (PostgreSQL + Airflow) feeding a Next.js dashboard; reduced manual reporting by ~80%.</p>
+    </header>
+
+    <section>
+      <h2>Problem</h2>
+      <p>Reporting was manual, siloed, and slow. Stakeholders lacked a single source of truth to monitor sales KPIs in near real-time.</p>
+    </section>
+
+    <section>
+      <h2>Process</h2>
+      <p>Built an ETL with Airflow to aggregate and clean data from transactional systems into PostgreSQL, then exposed APIs with FastAPI consumed by a Next.js dashboard.</p>
+    </section>
+
+    <section>
+      <h2>Outcome</h2>
+      <p>Automated reporting and interactive dashboards reduced time-to-insight and manual work by ~80%, improving decision cycles.</p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <ul>
+        <li>End-to-end pipeline with testable DAGs</li>
+        <li>FastAPI endpoints with pagination and caching</li>
+        <li>Responsive Next.js dashboard with charting</li>
+      </ul>
+    </section>
+
+    <section class="media-grid">
+      <figure><svg viewBox="0 0 800 500"><rect width="100%" height="100%" fill="#F4F7FF" rx="12"/></svg><figcaption>Dashboard — Overview</figcaption></figure>
+      <figure><svg viewBox="0 0 800 500"><rect width="100%" height="100%" fill="#FFF7F5" rx="12"/></svg><figcaption>ETL diagram</figcaption></figure>
+    </section>
+
+    <footer class="case-footer">
+      <a class="btn btn-primary" href="work.html">Back to Work</a>
+      <a class="btn btn-ghost" href="#">Next Project</a>
+    </footer>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a href="mailto:mazzinealhoucine@gmail.com">mazzinealhoucine@gmail.com</a>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
