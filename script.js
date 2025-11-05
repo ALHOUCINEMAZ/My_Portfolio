@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.card, .feature-illustration, .media-grid figure').forEach(el=>obs.observe(el));
   }
 
-  // Work filters
+  // projects filters
   const filters = document.querySelectorAll('.filter');
   if(filters.length){
     filters.forEach(btn=>btn.addEventListener('click', ()=>{

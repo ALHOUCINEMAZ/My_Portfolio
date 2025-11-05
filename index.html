@@ -3,201 +3,279 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Al houcine mazzine — Full stack developer / Data Analyst</title>
-  <meta name="description" content="Portfolio of Al houcine mazzine — Full-stack developer and data analyst building dashboards and tools that drive measurable results.">
+  <title>Al houcine mazzine</title>
+  <meta name="description" content="Portfolio of Al houcine mazzine — Full-stack developer, data analyst, and graphic designer building reliable web apps, dashboards, and tools that turn data into measurable results. Skilled in front-end and back-end development with React, Node.js, Python, SQL, Power BI, and modern web technologies">
+  <link rel="icon" href="images/logo%20maz.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container nav-row">
-      <a class="logo" href="#top">Al houcine mazzine</a>
-      <nav class="nav" aria-label="Primary">
-        <ul>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <header class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between py-6">
+      <img src="images/logo maz.png" alt="Al houcine mazzine logo" class="h-11 w-20 object-contain">
+      <nav aria-label="Primary">
+        <ul class="flex items-center gap-6 text-gray-600">
+          <li><a class="hover:text-gray-900" href="#projects">projects</a></li>
+          <li><a class="hover:text-gray-900" href="#about">About</a></li>
+          <li><a class="hover:text-gray-900" href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav>                                            
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="hero-content">
-        <h1>Full Stack Developer / Data Analyst</h1>
-        <p>
-          Hi! My name is <strong>Al houcine mazzine</strong>.<br>
-          I’m a full-stack developer and data analyst who creates dashboards and self-serve tools
-          for product and operations teams — driving faster insights and measurable results.
-        </p>
+    <section id="top" class="relative bg-white rounded-2xl overflow-hidden p-8 grid md:grid-cols-2 gap-8 items-center" style="background-image: url('images/hero\ section.png'); background-position: right; background-size: cover;">
+      <div class="absolute inset-0 bg-gradient-to-r from-white/80 via-white/60 to-transparent pointer-events-none"></div>
+
+      <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Al houcine mazzine<span class="text-gray-400"> 
+        <p class="mt-4 text-lg text-gray-600 max-w-xl"> </span> Data Analyst<span class="text-gray-200"></span> / </span> Full stack developer<span class="text-gray-200"></span> / </span> Graphic Design</h1>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md font-semibold">View projects</a>
+          <a href="#contact" class="inline-flex items-center gap-2 border border-gray-200 px-4 py-2 rounded-md text-gray-700">Contact</a>
+          <a href="project-sales-analytics.html" class="inline-flex items-center gap-2 text-sm text-gray-500 px-3 py-2 rounded-md hover:bg-gray-50">Case study →</a>
+        </div>
       </div>
-      <div class="hero-media">
-        <img src="images/portfolio.png" alt="Portfolio portrait of Al houcine mazzine">
+
+      <div class="relative z-10 flex justify-center md:justify-end">
+        <img src="images/portfolio.png" alt="Portfolio portrait of Al houcine mazzine" class="rounded-xl shadow-lg object-cover w-full max-w-xs h-auto max-h-96">
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="skills-section" id="skills">
-      <h2>Technical Skills</h2>
-      <ul class="skills-list">
-        <li><img src="images/icons/Excel.png" alt="Excel" title="Excel"></li>
-        <li><img src="images/icons/Python.png" alt="Python" title="Python"></li>
-        <li><img src="images/icons/SQL.png" alt="SQL" title="SQL"></li>
-        <li><img src="images/icons/power BI.png" alt="Power BI" title="Power BI"></li>
-        <li><img src="images/icons/Html.png" alt="HTML" title="HTML"></li>
-        <li><img src="images/icons/Javascript.png" alt="JavaScript" title="JavaScript"></li>
-        <li><img src="images/icons/CSS.png" alt="CSS" title="CSS"></li>
+    <section id="skills" class="bg-white rounded-2xl p-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">Technical Skills</h2>
+        <p class="text-sm text-gray-500">Tooling, languages and libraries I use most</p>
+      </div>
+      <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 items-center">
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/Javascript.png" alt="JavaScript" class="w-16 h-16 object-contain">JavaScript</li>
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/Python.png" alt="Python" class="w-16 h-16 object-contain">Python</li>
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/SQL.png" alt="SQL" class="w-16 h-16 object-contain">SQL</li>
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/Html.png" alt="HTML" class="w-16 h-16 object-contain">HTML</li>
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/CSS.png" alt="CSS" class="w-16 h-16 object-contain">CSS</li>
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/Excel.png" alt="Excel" class="w-16 h-16 object-contain">Excel</li>
+        <li class="flex flex-col items-center gap-2 text-center text-sm text-gray-700"><img src="images/icons/power BI.png" alt="Power BI" class="w-16 h-16 object-contain">Power BI</li>
       </ul>
     </section>
 
-    <!-- WORK -->
-    <section class="container" id="work">
-      <h2 class="section-title">Work</h2>
-      <p class="section-lead">Selected projects across product, web, and data engineering.</p>
-
-      <div class="filters" role="tablist" aria-label="Project filters">
-        <button class="filter active" data-filter="*">All</button>
-        <button class="filter" data-filter="Product">Product</button>
-        <button class="filter" data-filter="Web">Web</button>
-        <button class="filter" data-filter="Data">Data</button>
-        <button class="filter" data-filter="Backend">Backend</button>
+    <!-- projects -->
+    <section id="projects" class="bg-white rounded-2xl p-8">
+      <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-semibold">projects</h2>
+          <p class="text-gray-500">Selected projects across product, web, and data engineering.</p>
+        <div class="hidden sm:flex gap-2">
+          <button class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">All</button>
+          <button class="px-3 py-1 rounded-full text-sm border">Product</button>
+          <button class="px-3 py-1 rounded-full text-sm border">Web</button>
+          <button class="px-3 py-1 rounded-full text-sm border">Data</button>
+          <button class="px-3 py-1 rounded-full text-sm border">Backend</button>
+        </div>
       </div>
 
-      <div class="grid grid-work" id="projects">
-        <article class="card" data-tags="Data,Product">
-          <a href="project-sales-analytics.html" class="card-link">
-            <div class="card-media" role="img" aria-label="Sales Analytics Dashboard cover">
-              <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
-                <rect width="100%" height="100%" fill="#F4F7FF" rx="12" />
-              </svg>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <a href="project-sales-analytics.html" class="block">
+            <div class="h-44 bg-gradient-to-b from-indigo-50 to-white flex items-center justify-center">
+              <svg viewBox="0 0 800 500" class="w-full h-full" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#F4F7FF" rx="12"/></svg>
             </div>
-            <div class="card-body">
-              <h3>Sales Analytics Dashboard</h3>
-              <p class="one-liner">
-                End-to-end data pipeline feeding a Next.js dashboard; reduced manual reporting by ~80%.
-              </p>
-              <div class="tags">
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Airflow</span>
-                <span class="tag">Next.js</span>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Sales Analytics Dashboard</h3>
+              <p class="text-sm text-gray-600 mt-2">End-to-end data pipeline feeding a Next.js dashboard; reduced manual reporting by ~80%.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">PostgreSQL</span>
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">Airflow</span>
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">Next.js</span>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="card" data-tags="Web">
-          <a href="#" class="card-link">
-            <div class="card-media" role="img" aria-label="Placeholder project B">
-              <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
-                <rect width="100%" height="100%" fill="#FFF7F5" rx="12" />
-              </svg>
+        <!-- Card 2 -->
+        <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <a href="#" class="block">
+            <div class="h-44 bg-gradient-to-b from-pink-50 to-white flex items-center justify-center">
+              <svg viewBox="0 0 800 500" class="w-full h-full" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#FFF7F5" rx="12"/></svg>
             </div>
-            <div class="card-body">
-              <h3>Project B — [title]</h3>
-              <p class="one-liner">[Add concise outcome]</p>
-              <div class="tags">
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Project B — [title]</h3>
+              <p class="text-sm text-gray-600 mt-2">[Add concise outcome]</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">React</span>
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">Node.js</span>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="card" data-tags="Backend,Data">
-          <a href="#" class="card-link">
-            <div class="card-media" role="img" aria-label="Placeholder project C">
-              <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
-                <rect width="100%" height="100%" fill="#F6FFF7" rx="12" />
-              </svg>
+        <!-- Card 3 -->
+        <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <a href="#" class="block">
+            <div class="h-44 bg-gradient-to-b from-green-50 to-white flex items-center justify-center">
+              <svg viewBox="0 0 800 500" class="w-full h-full" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#F6FFF7" rx="12"/></svg>
             </div>
-            <div class="card-body">
-              <h3>Project C — [title]</h3>
-              <p class="one-liner">[Add a concise outcome]</p>
-              <div class="tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">Docker</span>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Project C — [title]</h3>
+              <p class="text-sm text-gray-600 mt-2">[Add a concise outcome]</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">FastAPI</span>
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">Docker</span>
               </div>
             </div>
           </a>
         </article>
+
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="container" id="about">
-      <h2>About</h2>
-      <p>
-        I'm a passionate developer with experience in full-stack development and data analysis.
-        I enjoy transforming raw data into actionable insights and building scalable web tools
-        that help teams make better decisions.
-      </p>
+    <section id="about" class="bg-white rounded-2xl p-8">
+      <div class="flex items-start gap-6">
+        <div class="w-40 flex-shrink-0">
+          <img src="images/portfolio.png" alt="Portrait" class="rounded-xl object-cover w-full h-full">
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold">About</h2>
+          <p class="text-gray-600 mt-2">Hi — I’m <strong>Al houcine mazzine</strong>. I build reliable web apps and data tools that turn product and operations signals into action. My stack includes React/Next.js, Node.js, Python, SQL, HTML, CSS, and JavaScript. I also work with Power BI and Excel for data analysis and visualization, and apply my graphic design skills to create clean, user-friendly interfaces and visuals.</p>
+        <div class="mt-6 flex flex-wrap gap-3"></p>
+          <div class="mt-4">
+            <a href="https://docs.google.com/document/d/1gQf7xL-UQsfSFGYgSC6xz2fNvN7IwCpAaNe0QpuqP0E/edit?tab=t.0#heading=h.hq2mika8wjcl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md" aria-label="Open CV on Google Docs">Download CV</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- EDUCATION -->
-    <section class="education-section" id="education">
-      <h2>Education</h2>
-      <div class="education-list">
-        <div class="education-item">
-          <h3>Bachelor’s Degree in Law </h3>
-          <p><strong>from Hassan First University, Morocco</strong></p>
-          <p>Gained a solid understanding of legal principles, institutions, and procedures, developing skills in legal analysis, critical thinking, and interpretation of laws.</p>
+    <section id="education" class="bg-white rounded-2xl p-8">
+      <h2 class="text-2xl font-semibold mb-6">Education</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Bachelor’s Degree in Law</h3>
+          <p class="text-sm text-gray-600"><strong>Hassan First University, Morocco</strong></p>
+          <p class="mt-2 text-gray-600">Gained a solid understanding of legal principles, institutions, and procedures, developing skills in legal analysis and critical thinking.</p>
         </div>
-
-        <div class="education-item">
-          <h3>Data Analysis Certification</h3>
-          <p><strong>ALX</strong></p>
-          <p>Learned applied data analysis, visualization, and business intelligence using Excel, SQL, and Power BI.</p>
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Data Analysis Certification</h3>
+          <p class="text-sm text-gray-600"><strong>ALX</strong></p>
+          <p class="mt-2 text-gray-600">Applied data analysis, visualization, and business intelligence using Excel, SQL, and Power BI.</p>
         </div>
-
-        <div class="education-item">
-          <h3>Virtual Assistant</h3>
-          <p><strong>ALX</strong></p>
-          <p>Learned essential virtual assistant skills, including communication, time management, task organization, research, and use of digital tools to support business operations and remote teams.</p>
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Front-End Development Certification</h3>
+          <p class="text-sm text-gray-600"><strong>ALX</strong></p>
+          <p class="mt-2 text-gray-600">Learned the fundamentals of front-end web development, including HTML, CSS, and JavaScript, to build responsive and user-friendly websites and applications.</p>
         </div>
-
-        <div class="education-item">
-          <h3>Graphic Design</h3>
-          <p><strong>ALX</strong></p>
-          <p>Learned the principles of visual design, including color theory, typography, layout, and branding, using tools like Adobe Photoshop, Illustrator, and Canva to create professional graphics and digital content.</p>
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Back-End Development Certification</h3>
+          <p class="text-sm text-gray-600"><strong>ALX</strong></p>
+          <p class="mt-2 text-gray-600">Learned the fundamentals of back-end development, including server-side programming, databases, and APIs, to build scalable and secure web applications.</p>
         </div>
-
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Graphic Design Certification</h3>
+          <p class="text-sm text-gray-600"><strong>ALX</strong></p>
+          <p class="mt-2 text-gray-600">Learned the principles of visual design, including color theory, typography, layout, and branding, using tools like Adobe Photoshop, Illustrator, and Canva to create professional graphics and digital content.</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Virtual Assistant Certification</h3>
+          <p class="text-sm text-gray-600"><strong>ALX</strong></p>
+          <p class="mt-2 text-gray-600">Learned essential virtual assistant skills, including communication, time management, task organization, research, and use of digital tools to support business operations and remote teams.</p>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="container" id="contact">
-      <h2>Contact</h2>
-      <p>If you’d like to work together or just say hello, feel free to reach out!</p>
-      <form id="contactForm" class="contact-form">
-        <label for="name">Name</label>
-        <input id="name" name="name" required>
+    <section id="contact" class="bg-white rounded-2xl p-8">
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <p class="text-gray-600 mb-6">If you’d like to work together or just say hello, feel free to reach out.</p>
+      <form id="contactForm" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="md:col-span-2 grid grid-cols-1 gap-4">
+          <label class="text-sm text-gray-700">Name
+            <input id="name" name="name" required class="mt-1 block w-full rounded-md border border-gray-200 px-3 py-2 bg-white focus:ring-2 focus:ring-blue-200" />
+          </label>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+          <label class="text-sm text-gray-700">Email
+            <input id="email" name="email" type="email" required class="mt-1 block w-full rounded-md border border-gray-200 px-3 py-2 bg-white focus:ring-2 focus:ring-blue-200" />
+          </label>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+          <label class="text-sm text-gray-700">Message
+            <textarea id="message" name="message" rows="6" required class="mt-1 block w-full rounded-md border border-gray-200 px-3 py-2 bg-white focus:ring-2 focus:ring-blue-200"></textarea>
+          </label>
 
-        <button class="btn btn-primary" type="submit">Send message</button>
+          <div>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md">Send message</button>
+          </div>
+        </div>
+
+        <aside class="md:col-span-1 p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold">Contact</h3>
+
+          <p class="mt-2 text-sm text-gray-700">
+            <a href="mailto:mazzinealhoucine@gmail.com" class="flex items-center text-blue-600 hover:underline" aria-label="Email">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 6.5v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 6.5l-9 6-9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              mazzinealhoucine@gmail.com
+            </a>
+          </p>
+
+          <h4 class="mt-4 font-medium">Social</h4>
+          <p class="mt-2 text-sm flex flex-col sm:flex-row sm:items-center sm:gap-4">
+            <a href="https://github.com/ALHOUCINEMAZ" class="flex items-center text-gray-700 hover:text-gray-900" aria-label="GitHub">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.92 3.19 9.1 7.61 10.57.56.1.77-.24.77-.54 0-.27-.01-1.17-.02-2.13-3.09.67-3.74-1.49-3.74-1.49-.51-1.29-1.24-1.64-1.24-1.64-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.52 0-1.22.44-2.22 1.16-3.01-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.12 1.15a10.8 10.8 0 0 1 2.84-.38c.96.01 1.93.13 2.84.38 2.17-1.45 3.12-1.15 3.12-1.15.61 1.54.23 2.68.11 2.96.72.79 1.16 1.79 1.16 3.01 0 4.29-2.61 5.23-5.09 5.51.4.34.76 1.02.76 2.06 0 1.49-.01 2.69-.01 3.06 0 .3.2.66.78.54 4.41-1.48 7.6-5.66 7.6-10.57C23.25 5.48 18.27.5 12 .5z"/>
+              </svg>
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/al-houcine-mazzine-b98305143/" class="flex items-center text-gray-700 hover:text-gray-900 mt-2 sm:mt-0" aria-label="LinkedIn">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.1.88 1.98 1.98 1.98h.02C6.08 7.46 7 6.58 7 5.48 7 4.38 6.12 3.5 4.98 3.5zM3.5 8.98h3v11.52h-3V8.98zM9.5 8.98h2.88v1.57h.04c.4-.76 1.38-1.57 2.85-1.57 3.05 0 3.61 2.01 3.61 4.62v6.9h-3V14.9c0-1.52-.03-3.48-2.12-3.48-2.12 0-2.44 1.65-2.44 3.36v5.56h-3V8.98z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </p>
+        </aside></svg>
       </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <a href="mailto:mazzinealhoucine@gmail.com" class="footer-email">mazzinealhoucine@gmail.com</a>
-      <div class="socials">
-        <a href="https://github.com/ALHOUCINEMAZ" aria-label="GitHub">GitHub</a>
-        <a href="https://www.linkedin.com/in/al-houcine-mazzine-b98305143/" aria-label="LinkedIn">LinkedIn</a>
+  <footer class="bg-white rounded-2xl p-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <a href="mailto:mazzinealhoucine@gmail.com" class="flex items-center text-gray-600 hover:text-gray-800">
+          <!-- Email icon -->
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 6.5v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 6.5l-9 6-9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="ml-2">mazzinealhoucine@gmail.com</span>
+        </a>
+
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/ALHOUCINEMAZ" aria-label="GitHub" class="text-gray-600 hover:text-gray-800">
+            <!-- GitHub icon -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.92 3.19 9.1 7.61 10.57.56.1.77-.24.77-.54 0-.27-.01-1.17-.02-2.13-3.09.67-3.74-1.49-3.74-1.49-.51-1.29-1.24-1.64-1.24-1.64-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.52 0-1.22.44-2.22 1.16-3.01-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.12 1.15a10.8 10.8 0 0 1 2.84-.38c.96.01 1.93.13 2.84.38 2.17-1.45 3.12-1.15 3.12-1.15.61 1.54.23 2.68.11 2.96.72.79 1.16 1.79 1.16 3.01 0 4.29-2.61 5.23-5.09 5.51.4.34.76 1.02.76 2.06 0 1.49-.01 2.69-.01 3.06 0 .3.2.66.78.54 4.41-1.48 7.6-5.66 7.6-10.57C23.25 5.48 18.27.5 12 .5z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/al-houcine-mazzine-b98305143/" aria-label="LinkedIn" class="text-gray-600 hover:text-gray-800">
+            <!-- LinkedIn icon -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.1.88 1.98 1.98 1.98h.02C6.08 7.46 7 6.58 7 5.48 7 4.38 6.12 3.5 4.98 3.5zM3.5 8.98h3v11.52h-3V8.98zM9.5 8.98h2.88v1.57h.04c.4-.76 1.38-1.57 2.85-1.57 3.05 0 3.61 2.01 3.61 4.62v6.9h-3V14.9c0-1.52-.03-3.48-2.12-3.48-2.12 0-2.44 1.65-2.44 3.36v5.56h-3V8.98z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-6 text-center text-sm text-gray-500">
+        © 2025 Al houcine mazzine.
       </div>
     </div>
-    <div class="container copyright">
-      © 2025 Al houcine mazzine .
-    </div>
-  </footer>
+  </footer></svg>
 
   <script src="script.js" defer></script>
 </body>

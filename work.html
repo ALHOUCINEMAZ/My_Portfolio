@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Work — Al houcine mazzine</title>
+  <title>projects — Al houcine mazzine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-row">
-      <a class="logo" href="index.html">Al houcine mazzine</a>
-      <nav class="nav">
-        <ul>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+  <header class="bg-transparent">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between py-6">
+      <a class="text-lg font-bold text-gray-900" href="index.html">Al houcine mazzine</a>
+      <nav>
+        <ul class="flex items-center gap-6 text-gray-600">
+          <li><a class="hover:text-gray-900" href="projects.html">projects</a></li>
+          <li><a class="hover:text-gray-900" href="about.html">About</a></li>
+          <li><a class="hover:text-gray-900" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="work-hero">
-      <h1 class="section-title">Work</h1>
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="projects-hero">
+      <h1 class="section-title">projects</h1>
       <p class="section-lead">Selected projects across product, web, and data engineering.</p>
       <div class="filters" role="tablist" aria-label="Project filters">
         <button class="filter active" data-filter="*">All</button>
@@ -33,8 +34,8 @@
       </div>
     </section>
 
-    <section class="work-grid">
-      <div class="grid grid-work" id="projects">
+    <section class="projects-grid">
+      <div class="grid grid-projects" id="projects">
         <!-- Project cards mirrored from index; in a real site these would be templated -->
         <article class="card" data-tags="Data,Product">
           <a href="project-sales-analytics.html" class="card-link">
@@ -78,12 +79,12 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <a href="mailto:mazzinealhoucine@gmail.com" class="footer-email">mazzinealhoucine@gmail.com</a>
-      <div class="socials">
-        <a href="https://github.com/ALHOUCINEMAZ">GitHub</a>
-        <a href="https://www.linkedin.com/in/al-houcine-mazzine-b98305143/">LinkedIn</a>
+  <footer class="bg-transparent">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-gray-600">
+      <a href="mailto:mazzinealhoucine@gmail.com" class="hover:text-gray-900">mazzinealhoucine@gmail.com</a>
+      <div class="flex gap-4">
+        <a href="https://github.com/ALHOUCINEMAZ" class="hover:text-gray-900">GitHub</a>
+        <a href="https://www.linkedin.com/in/al-houcine-mazzine-b98305143/" class="hover:text-gray-900">LinkedIn</a>
       </div>
     </div>
   </footer>

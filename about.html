@@ -4,23 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About — Al houcine mazzine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-row">
-      <a class="logo" href="index.html">Al houcine mazzine</a>
-      <nav class="nav">
-        <ul>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+  <header class="bg-transparent">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between py-6">
+      <a class="text-lg font-bold text-gray-900" href="index.html">Al houcine mazzine</a>
+      <nav>
+        <ul class="flex items-center gap-6 text-gray-600">
+          <li><a class="hover:text-gray-900" href="projects.html">projects</a></li>
+          <li><a class="hover:text-gray-900" href="about.html">About</a></li>
+          <li><a class="hover:text-gray-900" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container about">
+  <main class="max-w-6xl mx-auto px-6 py-12 about">
     <section class="about-top">
       <div class="portrait">
         <img src="images/protrait.jpg" alt="Portrait of Al houcine mazzine" width="160" height="160" loading="lazy" style="border-radius:20px; object-fit:cover; display:block;">
@@ -32,36 +33,22 @@
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <ul class="skills">
-      <li>
-        <img src="images/icons/Javascript.png" alt="JavaScript/TypeScript" title="JavaScript/TypeScript" width="120" height="120" >
-      </li>
-      <li>
-        <img src="images/icons/Python.png" alt="Python" width= "120" height= 120 title="Python">
-      </li>
-      <li>
-        <img src="images/icons/SQL.png" alt="SQL" title="SQL" width="120" height="120">
-      </li>
-      <li>
-        <img src="images/icons/Html.png" alt="html" title="HTML" width="120" height="120">
-      </li>
-      <li>
-        <img src="images/icons/CSS.png" alt="css" title="CSS" width="120" height="120">
-      </li>
-       <li>
-        <img src="images/icons/Excel.png" alt="excel" title="Excel" width="120" height="120">
-      </li>
-       <li>
-        <img src="images/icons/power BI.png" alt="Power BI" title="Power BI" width="120" height="120">
-       </li>
+      <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+      <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 items-center">
+        <li class="flex justify-center"><img src="images/icons/Javascript.png" alt="JavaScript/TypeScript" title="JavaScript/TypeScript" class="w-20 h-20 object-contain"></li>
+        <li class="flex justify-center"><img src="images/icons/Python.png" alt="Python" title="Python" class="w-20 h-20 object-contain"></li>
+        <li class="flex justify-center"><img src="images/icons/SQL.png" alt="SQL" title="SQL" class="w-20 h-20 object-contain"></li>
+        <li class="flex justify-center"><img src="images/icons/Html.png" alt="HTML" title="HTML" class="w-20 h-20 object-contain"></li>
+        <li class="flex justify-center"><img src="images/icons/CSS.png" alt="CSS" title="CSS" class="w-20 h-20 object-contain"></li>
+        <li class="flex justify-center"><img src="images/icons/Excel.png" alt="Excel" title="Excel" class="w-20 h-20 object-contain"></li>
+        <li class="flex justify-center"><img src="images/icons/power BI.png" alt="Power BI" title="Power BI" class="w-20 h-20 object-contain"></li>
       </ul>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <a href="mailto:mazzinealhoucine@gmail.com">mazzinealhoucine@gmail.com</a>
+  <footer class="bg-transparent">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-gray-600">
+      <a href="mailto:mazzinealhoucine@gmail.com" class="hover:text-gray-900">mazzinealhoucine@gmail.com</a>
     </div>
   </footer>
   <script src="script.js" defer></script>
